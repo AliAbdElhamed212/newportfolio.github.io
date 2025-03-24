@@ -311,31 +311,14 @@ section {
 }
 
 .img-box img {
-    width: 50%;
-    /* لجعل الصورة تملأ الحاوية */
-    height: 60px;
-    /* لجعل الصورة تملأ الحاوية */
-    object-fit: cover;
-    height: auto;
-    margin-top: -80px;
-    /* رفع الصورة لأعلى بمقدار 20px */
-
+    width: 400px;  /* تحديد عرض الصورة */
+    height: 400px; /* تحديد ارتفاع الصورة ليكون مساويًا للعرض */
+    border-radius: 200%; /* تحويل الصورة إلى دائرة */
+    object-fit: cover; /* التأكد من أن الصورة تملأ الدائرة */
+    margin-top: -80px; /* تحريك الصورة لأعلى حسب الحاجة */
+    display: block; /* منع الفراغات السفلية للصورة */
 }
 
-.liquid-shape {
-    position: absolute;
-    top: -80px;
-    /* رفع العنصر لأعلى بمقدار 20px */
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    /* لجعله خلف الصورة */
-}
-
-.liquid-shape:nth-child(2) {
-    filter: blur(50px);
-}
 
 /*About Section Css ---------------------------------------------------------  */
 .about-content {
